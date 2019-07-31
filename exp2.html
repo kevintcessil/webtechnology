@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Experiment 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Step 1</legend>
+       
+        <form>
+            Paper appearing:<br>
+            <input type="radio" name="paper" required="required" > 
+            <label>B.tech/B.E</label><br>
+            <input type="radio" name="paper" required="required"> 
+            <label> B.Arch/B.Plan</label><br>
+            <br>
+            Examination centre: &nbsp;
+             <select>
+                 <option label="Coimbatore" >
+                <option label="Kochi" >
+                <option label="Chennai" >
+                <option label="Bangalore" >
+                
+             </select>
+            <br>
+            <br>
+            Language Medium for question paper: <br>
+            <input type="radio" name="language" value="english" required="required">
+            <label>English</label><br>
+            <input type="radio" name="language" value="hindi" required="required"> 
+            <label>Hindi</label><br>
+            <input type="radio" name="language" value="gujarati" required="required">
+            <label>Gujarati</label><br>
+            </fieldset><br>
+            <fieldset>
+            <legend>Personal Details:</legend>
+            <br>
+            <label>Name of candidate</label><br>
+            <input type="text" pattern="[A-Za-z]*" name="firstname" required="required" ><br><br>
+            <label>Father's Name</label><br>
+            <input type="text" name="fathername" required="required"><br><br>
+            <label>Mother's Name</label><br>
+            <input type="text" name="mothername" required="required"><br><br>
+            <label>Person with Disability:</label>
+             Yes<input type="radio" name="disability" value="yesdisability" required="required">
+             No<input type="radio" name="disability" value="nodisability" required="required"><br><br>
+            <label>Mail address</label><br>
+             <input type="email" name="mailaddress" required="required" required="required"><br><br>
+            <label>Date of Birth</label><br>
+            <input type="date" name="dob" required="required" required="required"><br><br>
+            <label>Gender:</label>&nbsp;&nbsp;
+            <label>Male</label>
+            <input type="radio" name="gender" value="male" required="required">
+            <label>Female</label>
+            <input type="radio" name="gender" value="female" required="required">
+        </fieldset><br>
+        <fieldset>
+            <legend>Academic Details</legend><br>
+            <label>Year of passing 10th</label><br>
+            <input type="date" name="classtenyear" required="required"><br><br>
+            <label>School Board of class 12th/qualifying exam :</label>
+            <select>
+                 <option label="CBSE" >
+                <option label="State" >
+            </select><br><br>
+            <label>Name of qualifying exam passed</label><br>
+            <input type="text" name="nameofexam" required="required"><br><br>
+            <label>Place of class 12th/qualifying exam :</label><br>
+            <input type="text" name="placeofscool" required="required"><br><br>
+            <label>Year of passing or appearing class 12th/qualifying exam</label><br>
+            <input type="date" name="yearofpassing" required="required"><br><br>
+            <label>Percentage of mark in class 12th</label><br>
+            <input type="number" name="12markpercentage" min="1" max="100" required="required"><br><br>
+            <label>Name of the college / school </label><br>
+            <input type="text" name="collegename" required="required"><br><br>
+            <label>Address of school/college</label><br>
+            <input type="text" name="schooladdress" required="required"><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Contact Details:</legend>
+            <br>
+            <label>Email</label><br>
+            <input type="email" name="email" required="required"><br><br>
+            <label>Mobile Number</label><br>
+            <input type="tel" name="mobile" pattern="[0-9]{10}" required="required"><br><br>
+            <label>Landline number</label><br>
+            <input type="tel" name="landline" pattern="[0-9]{10}" required="required"><br><br>
+            <h3>Password:</h3>
+            <label>Password</label><br>
+            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required" ><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Upload of scanned document :</legend><br>
+            
+            <label>Photograph</label><br>
+            <input type="file" name="imgdocument" accept=".jpg" required="required"><br><br>
+            <label>signature</label><br>
+            <input type="file" name="sigimg" accept=".jpg" required="required">
+            <br>
+            <br>
+            <input type="submit" >
+            
+        </fieldset>
+        
+        
+           
+         </form> 
+
+    </body>
+</html>
